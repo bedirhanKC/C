@@ -6,21 +6,24 @@ int main(){
 	
 	int rastgelesayi,i;
 
-	srand(time(NULL)); //Bu da her çalıştırmada random sayıyı sıfırlamaya yarıyor.
+	srand(time(NULL)); //Bu da her Ã§alÄ±ÅŸtÄ±rmada random sayÄ±yÄ± sÄ±fÄ±rlamaya yarÄ±yor.
 	
-	rastgelesayi= rand(); //Bu komut "rastgelesayi" değişkenine rastgele bir sayı atamanıza yarıyor.
+	rastgelesayi= rand(); //Bu komut "rastgelesayi" deÄŸiÅŸkenine rastgele bir sayÄ± atamanÄ±za yarÄ±yor.
 	
 	rastgelesayi=0;
 	
-	for(i=0;rastgelesayi!=31;i++){
-		rastgelesayi=rand()%10+25; //50ye kadar random
+	for(i=0;rastgelesayi!=11;i++){
+		
+		rastgelesayi=rand()%50+1; //50ye kadar random
+		
 		if(rastgelesayi==0){
 			rastgelesayi++;
 		}
+		
 		printf("%d\n",rastgelesayi);
 	}	
 	
-	printf("\n---------------------\n\n%d. denemede 31i buldunuz.",i);
+	printf("\n---------------------\n\n%d. denemede 11'i buldunuz.",i);
 	
 	
 	return 0;
