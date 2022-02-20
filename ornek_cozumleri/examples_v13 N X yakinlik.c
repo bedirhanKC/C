@@ -7,24 +7,24 @@
 int main(){
 setlocale(LC_ALL,"Turkish");
 	
-	//Dışarıdan girilen bir X değerinini yine dışarıdan girilen N elemanlı bir dizideki elemanlardan hangisine en yakın olduğunu bulan program.
+	//DÄ±ÅŸarÄ±dan girilen bir X deÄŸerinini yine dÄ±ÅŸarÄ±dan girilen N elemanlÄ± bir dizideki elemanlardan hangisine en yakÄ±n olduÄŸunu bulan program.
 
 	int x,n,ans,a,i,s,c,q;
 	
-menu:	printf("Dışarıdan girilen bir X değerinini yine dışarıdan girilen N elemanlı bir dizideki elemanlardan,\nhangisine en yakın olduğunu bulan program.\n\nBir X değeri giriniz: ");
+menu:	printf("DÄ±ÅŸarÄ±dan girilen bir X deÄŸerinini yine dÄ±ÅŸarÄ±dan girilen N elemanlÄ± bir dizideki elemanlardan,\nhangisine en yakÄ±n olduÄŸunu bulan program.\n\nBir X deÄŸeri giriniz: ");
 	scanf("%d",&x);
 	
-menu2:	printf("Dizinin eleman sayısını giriniz[n]: ");
+menu2:	printf("Dizinin eleman sayÄ±sÄ±nÄ± giriniz[n]: ");
 	scanf("%d",&n);
 		if(n<=0){
-			printf("yanlış giriş yaptınız, menüye atabilirim ama sırf şerefsizlik olsun diye uygulamayı kapatıyorum, bb");
+			printf("yanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z, menÃ¼ye atabilirim ama keyfim kapatmak istedi, bb");
 			return 0;
 		}
 	
 	int dizi[n];
 	
 	for(i=0;i<n;i++){
-		printf("%d. elemanı giriniz: ",i);
+		printf("%d. elemanÄ± giriniz: ",i);
 		scanf("%d",&a);
 		dizi[i]=a;
 	}
@@ -40,14 +40,14 @@ q=0;
 		}
 }
 if(s!=q){
-	printf("\n\n%d değerine en yakın değerler = %d ve %d",x,s,q);
+	printf("\n\n%d deÄŸerine en yakÄ±n deÄŸerler = %d ve %d",x,s,q);
 	goto menu3;
 
 }
-printf("\n\n%d değerine en yakın değer = %d",x,s);
+printf("\n\n%d deÄŸerine en yakÄ±n deÄŸer = %d",x,s);
 
 	
-menu3:	printf("\n\nYeni X elemanı oluşturmak için 9'a,\nYeni dizi oluşturmak için ise 5'e basın.\naksi bir tuş çıkışa yönlendirecektir.\n");
+menu3:	printf("\n\nYeni X elemanÄ± oluÅŸturmak iÃ§in 9'a,\nYeni dizi oluÅŸturmak iÃ§in ise 5'e basÄ±n.\naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 	scanf("%d",&c);
 	printf("\n");		
 	if(c == 9){
