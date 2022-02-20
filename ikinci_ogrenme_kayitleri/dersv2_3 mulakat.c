@@ -21,8 +21,5 @@ int main(){
 		printf("boy mulakatini gecemediniz.");
 	}
 	
-	
-	
-	
 	return 0;
 }
