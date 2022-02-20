@@ -6,9 +6,5 @@ int main(){
 	
 	printf("%d",persembe);
 	
-	
-
-	
-	
 return 0;
 }
