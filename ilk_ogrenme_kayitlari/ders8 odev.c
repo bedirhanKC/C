@@ -5,24 +5,25 @@ int main(){
 	
 	int sayi,a;
 
-		menu:	printf("1-Gül\n2-Papatya\n3-Lale\n4-Nergis\n");
-	printf("Çiçek kodunu giriniz[1-4]: ");
+		menu:	printf("1-GÃ¼l\n2-Papatya\n3-Lale\n4-Nergis\n");
+	printf("Ã‡iÃ§ek kodunu giriniz[1-4]: ");
 	scanf("%d",&sayi);
 	
 	switch(sayi){
 		case 1:
-			printf("\nGül: haftada en az iki kere, kış aylarında bir kere sulanmalıdır(saksı üstten sulanmalıdır.)\n");
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nGÃ¼l: haftada en az iki kere, kÄ±ÅŸ aylarÄ±nda bir kere sulanmalÄ±dÄ±r(saksÄ± Ã¼stten sulanmalÄ±dÄ±r.)\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
 			goto menu;
 		}else{
 			break;
-		}			
+		}	
+			
 		case 2:
-			printf("\npapatya: haftada bir kez sulanmalıdır.\n");
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\npapatya: haftada bir kez sulanmalÄ±dÄ±r.\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
@@ -30,9 +31,10 @@ int main(){
 		}else{
 			break;
 		}
+			
 		case 3:
-			printf("\nLale: haftada iki kere saksı üstten sulanmalıdır.\n");
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nLale: haftada iki kere saksÄ± Ã¼stten sulanmalÄ±dÄ±r.\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
@@ -40,9 +42,10 @@ int main(){
 		}else{
 			break;
 		}
+			
 		case 4:
-			printf("\nNergis: 3-4 günde bir kontrol edilerek sulanmalıdır. toprağın kurumaması yeterlidir.\n");
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nNergis: 3-4 gÃ¼nde bir kontrol edilerek sulanmalÄ±dÄ±r. topraÄŸÄ±n kurumamasÄ± yeterlidir.\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
@@ -50,37 +53,19 @@ int main(){
 		}else{
 			break;
 		}
+			
 		default : 
-		
-		
-		printf("\nyanlış karakter girdiniz.\n");		
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nyanlÄ±ÅŸ karakter girdiniz.\n");		
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
 			goto menu;
 		}else{
 			break;
-		}
-	
-		
-
+		}	
 	}
 	
-			return 0;
+	return 0;
 
 	}
-
-		
-		
-		
-	
-		 
-		
-	
-	
-	
-	
-	
-
-
