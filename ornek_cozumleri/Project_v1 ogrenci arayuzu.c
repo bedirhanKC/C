@@ -12,17 +12,18 @@ setlocale(LC_ALL,"Turkish");
 
 
 	
-anamenu:printf("Sisteme bilgi girmek için 1'e\nSistemden bilgi almak için 2'ye basınız.\nGiriş yapınız:");
+anamenu:printf("Sisteme bilgi girmek iÃ§in 1'e\nSistemden bilgi almak iÃ§in 2'ye basÄ±nÄ±z.\nGiriÅŸ yapÄ±nÄ±z:");
 	scanf("%d",&giris);
 	
 	switch(giris){
 		
 case1:	case 1: 
+			
 			ogrenci_sayisi=0;
 			dizi[0][0]=1.0;
 			dizi2[0][0]=1;
 
-			printf("\nArd arda 3 defa [-1] Verisi girilene kadar bilgi girişi devam edecektir.\n[Öğrenci_numarası vize final] Biçiminde veri girişi gerçekliştirmeniz gerekiyor.\nÖğrenci numarası başında 2 olmadan girilecektir.\n");
+			printf("\nArd arda 3 defa [-1] Verisi girilene kadar bilgi giriÅŸi devam edecektir.\n[Ã–ÄŸrenci_numarasÄ± vize final] BiÃ§iminde veri giriÅŸi gerÃ§ekliÅŸtirmeniz gerekiyor.\nÃ–ÄŸrenci numarasÄ± baÅŸÄ±nda 2 olmadan girilecektir.\n");
 			for(i=0;bilgi!=-1;i++){
 			
 				printf("\n");
@@ -34,17 +35,17 @@ case1:	case 1:
 			ogrenci_sayisi-=1;				
 
 			if(ogrenci_sayisi==0){
-				printf("\nHiçbir öğrenci verisi girilmedi. Tekrar veri girişi yapmak için yönlendiriliyorsunuz...\n");
+				printf("\nHiÃ§bir Ã¶ÄŸrenci verisi girilmedi. Tekrar veri giriÅŸi yapmak iÃ§in yÃ¶nlendiriliyorsunuz...\n");
 				goto case1;
 			}else if(ogrenci_sayisi==1){
-				printf("\nTek öğrenci verisi girişi  yapıldı. Yeni baştan veri girişi yapmak istiyor musunuz? [E-H]:");
+				printf("\nTek Ã¶ÄŸrenci verisi giriÅŸi  yapÄ±ldÄ±. Yeni baÅŸtan veri giriÅŸi yapmak istiyor musunuz? [E-H]:");
 				scanf(" %c",&eh);
 								
 				if(eh=='E'||eh=='e' ){
-					printf("\nTekrar veri girişi isteğiniz doğrultusunda yönlendiriliyorsunuz...\n");
+					printf("\nTekrar veri giriÅŸi isteÄŸiniz doÄŸrultusunda yÃ¶nlendiriliyorsunuz...\n");
 					goto case1;
 				}else{
-					printf("\nTekrar veri girişi isteğiniz bulunmaması sebebiyle, bilgi alma menüsüne yönlendiriliyorsunuz\n(tek kişinin ne bilgisini alacaksan, enayi)\n");
+					printf("\nTekrar veri giriÅŸi isteÄŸiniz bulunmamasÄ± sebebiyle, bilgi alma menÃ¼sÃ¼ne yÃ¶nlendiriliyorsunuz\n(tek kiÅŸinin ne bilgisini alacaksan, enayi)\n");
 					}
 			}else{
 			}		
@@ -56,24 +57,24 @@ case1:	case 1:
 	case 2:
 	case2:
 			if(ogrenci_sayisi==0){
-				printf("\nolmayan öğrenci ile ilgili veri alamazsınız.");
+				printf("\nolmayan Ã¶ÄŸrenci ile ilgili veri alamazsÄ±nÄ±z.");
 				return 0;
 			}
 			
 			printf("\n");
-			printf("\nSınıf ile ilgili işlem yapmak için 1'e\nÖğrenci numarası ile bilgi almak için 2'ye basın.\n[1-2]:");
+			printf("\nSÄ±nÄ±f ile ilgili iÅŸlem yapmak iÃ§in 1'e\nÃ–ÄŸrenci numarasÄ± ile bilgi almak iÃ§in 2'ye basÄ±n.\n[1-2]:");
 			scanf("%d",&case2);
 			printf("\n");
 			switch(case2){
 				
 				case 1:
-					printf("\nÖğrenci Sayisi öğrenmek için 1'i\nSınıf ortalaması öğrenmek için 2'yi\nÇan notunu öğrenmek için 3'ü\nGeçti-geçmedi kontrolü için 4'ü\nÇan notuna yakın ortalamaya sahip öğrencileri görmek için 5'i tuşlayın.\n[1-5]:");
+					printf("\nÃ–ÄŸrenci Sayisi Ã¶ÄŸrenmek iÃ§in 1'i\nSÄ±nÄ±f ortalamasÄ± Ã¶ÄŸrenmek iÃ§in 2'yi\nÃ‡an notunu Ã¶ÄŸrenmek iÃ§in 3'Ã¼\nGeÃ§ti-geÃ§medi kontrolÃ¼ iÃ§in 4'Ã¼\nÃ‡an notuna yakÄ±n ortalamaya sahip Ã¶ÄŸrencileri gÃ¶rmek iÃ§in 5'i tuÅŸlayÄ±n.\n[1-5]:");
 					scanf("%d",&sinif);
 					printf("\n");					
 					switch(sinif){
 						case 1:
 							
-							printf("\nSınıfınızdaki öğrenci sayısı:%d\n",ogrenci_sayisi);
+							printf("\nSÄ±nÄ±fÄ±nÄ±zdaki Ã¶ÄŸrenci sayÄ±sÄ±:%d\n",ogrenci_sayisi);
 							break;
 							
 						case 2:
@@ -83,7 +84,7 @@ case1:	case 1:
 								sonuc+=dizi[i][3];
 							}
 							sonuc=sonuc/(float)ogrenci_sayisi;
-							printf("\nSınıf ortalaması:%.2f",sonuc);
+							printf("\nSÄ±nÄ±f ortalamasÄ±:%.2f",sonuc);
 							break;
 							
 						case 3:
@@ -94,14 +95,14 @@ case1:	case 1:
 							}
 							sonuc=sonuc/(float)ogrenci_sayisi;
 							if(sonuc<=35){
-								printf("\nçan notu:35\n");
+								printf("\nÃ§an notu:35\n");
 							}else{
-								printf("\nçan notu:%.2f\n",sonuc);
+								printf("\nÃ§an notu:%.2f\n",sonuc);
 							}
 							break;
 							
 						case 4:
-gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı listesine ulaşmak için 2'yi tuşlayınız.\n[1-2]:");
+gg:							printf("\nGeÃ§en ve Kalan Ã¶ÄŸrenci sayÄ±nÄ± Ã¶ÄŸrenmek iÃ§in1'i\nGeÃ§ti-KaldÄ± listesine ulaÅŸmak iÃ§in 2'yi tuÅŸlayÄ±nÄ±z.\n[1-2]:");
 							scanf("%d",&gg);
 							
 							sonuc=0.0;
@@ -124,21 +125,21 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı 
 											ksayisi++;
 										}
 									}
-									printf("\nGeçen kişi sayisi:%d\nKalan kişi sayisi:%d\n",gsayisi,ksayisi);
+									printf("\nGeÃ§en kiÅŸi sayisi:%d\nKalan kiÅŸi sayisi:%d\n",gsayisi,ksayisi);
 									break;
 									
 								case 2:
 									for(i=0;i<ogrenci_sayisi;i++){
 										if(dizi[i][3]>=can){
-											printf("%.f numaralı öğrenci, %.2f ortalama ile geçti\n",dizi2[i][0],dizi[i][3]);
+											printf("%.f numaralÄ± Ã¶ÄŸrenci, %.2f ortalama ile geÃ§ti\n",dizi2[i][0],dizi[i][3]);
 										}else{
-											printf("%.f numaralı öğrenci, %.2f ortalama ile kaldı\n",dizi2[i][0],dizi[i][3]);
+											printf("%.f numaralÄ± Ã¶ÄŸrenci, %.2f ortalama ile kaldÄ±\n",dizi2[i][0],dizi[i][3]);
 										}
 									}	
 									break;
 								default:
 									
-									printf("\nYanlış tuşlama yaptınız. keyfim kapatmak istedi");
+									printf("\nYanlÄ±ÅŸ tuÅŸlama yaptÄ±nÄ±z. keyfim kapatmak istedi");
 									break;
 							}
 							
@@ -146,7 +147,7 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı 
 							
 						case 5:
 							
-							printf("\nGirdiğiniz [N] değeri kadar çana uzaklığı bulunan puanlara sahip öğrencileri listelemek için\n[N]:");
+							printf("\nGirdiÄŸiniz [N] deÄŸeri kadar Ã§ana uzaklÄ±ÄŸÄ± bulunan puanlara sahip Ã¶ÄŸrencileri listelemek iÃ§in\n[N]:");
 							scanf("%f",&N);
 							
 							sonuc=0.0;
@@ -163,7 +164,7 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı 
 							for(i=0;i<ogrenci_sayisi;i++){
 								
 								if(can-dizi[i][3]<=N && can-dizi[i][3]>0){
-									printf("\n2%.f numaralı öğrencinin geçmek için %.2f puana ihtiyacı var.Şuanki notu:%.2f\n",dizi2[i][0],can-dizi[i][3],dizi[i][3]);
+									printf("\n2%.f numaralÄ± Ã¶ÄŸrencinin geÃ§mek iÃ§in %.2f puana ihtiyacÄ± var.Åuanki notu:%.2f\n",dizi2[i][0],can-dizi[i][3],dizi[i][3]);
 								}else{
 								}
 							}
@@ -171,7 +172,7 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı 
 							break;
 							
 						default:
-							printf("Yanlış girdin, keyfim sistemi kapatmak istedi");
+							printf("YanlÄ±ÅŸ girdin, keyfim sistemi kapatmak istedi");
 							break;
 					}
 					break;
@@ -188,34 +189,34 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeçti-Kaldı 
 							can=sonuc;
 						}
 						
-						printf("Bilgilerini görmek istediğiniz öğrencinin numarasını, başında 2 olmadan giriniz.\n");
+						printf("Bilgilerini gÃ¶rmek istediÄŸiniz Ã¶ÄŸrencinin numarasÄ±nÄ±, baÅŸÄ±nda 2 olmadan giriniz.\n");
 						scanf("%f",&N);
 				
 						for(i=0;i<ogrenci_sayisi;i++){
 							if(N==dizi2[i][0]){
 								
 								if(can>dizi[i][3]){
-									printf("\n\n%d numaralı öğrencinin\nVize:%.2f\nFinal:%.2f\nOrtalama:%.2f\nDurumu:kaldı\n\n",dizi2[i][0],dizi[i][1],dizi[i][2],dizi[i][3]);	
+									printf("\n\n%d numaralÄ± Ã¶ÄŸrencinin\nVize:%.2f\nFinal:%.2f\nOrtalama:%.2f\nDurumu:kaldÄ±\n\n",dizi2[i][0],dizi[i][1],dizi[i][2],dizi[i][3]);	
 									goto last;								
 								}else{
-									printf("\n\n%d numaralı öğrencinin\nVize:%.2f\nFinal:%.2f\nOrtalama:%.2f\nDurumu:geçti\n\n",dizi2[i][0],dizi[i][1],dizi[i][2],dizi[i][3]);
+									printf("\n\n%d numaralÄ± Ã¶ÄŸrencinin\nVize:%.2f\nFinal:%.2f\nOrtalama:%.2f\nDurumu:geÃ§ti\n\n",dizi2[i][0],dizi[i][1],dizi[i][2],dizi[i][3]);
 									goto last;
 									
 								}
 								
 							}
-						} printf("böyle biri yok knk");
+						} printf("bÃ¶yle biri yok knk");
 						last:
 					break;
  
 				default:
 					
-					printf("\nYanlış tuşlama yaptınız.");
+					printf("\nYanlÄ±ÅŸ tuÅŸlama yaptÄ±nÄ±z.");
 					break;
 			}	
 			break;
 		default:
-			printf("\nYanlış tuşlama yaptınız.");
+			printf("\nYanlÄ±ÅŸ tuÅŸlama yaptÄ±nÄ±z.");
 			break;
 	}
 	
