@@ -15,14 +15,14 @@ setlocale(LC_ALL,"Turkish");
 	printf("%x",pointerB);
 	
 
-			//Pointer kullanarak adresi değiştirme:
+			//Pointer kullanarak adresi deÃ°iÃ¾tirme:
 	int sayi=60;
 	int *pointer=&sayi;
 	pointer++;
 	printf("%u",pointer);
 	
 	
-		//hexadecimal(16lık) gösterimi:
+		//hexadecimal(16lÃ½k) gÃ¶sterimi:
 	char harf='A';
 	int *pointer=&harf;
 	printf("%x",pointer);
