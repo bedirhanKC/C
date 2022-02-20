@@ -6,7 +6,7 @@ setlocale(LC_ALL,"Turkish");
 
 int sayi,i,x;
 float a=0,toplam;
-menu:printf("aritmetik ortalamasýný bulmak istediðiniz sayýyý giriniz: ");
+menu:printf("aritmetik ortalamasini bulmak istediginiz sayiyi giriniz: ");
 scanf("%d",&sayi);
 
 for(i=1;i<=sayi;i++){
@@ -17,7 +17,7 @@ printf("%.0f/%d = ",a,sayi);
 toplam=a/sayi;
 printf("%.2f",toplam);
 
-	printf("\n\nmenüye dönmek için 9'a basýn, \naksi bir tuþ çýkýþa yönlendirecektir.\n");
+	printf("\n\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÃ½n, \naksi bir tus cikisa yÃ¶nlendirecektir.\n");
 	scanf("%d",&x);
 	printf("\n");		
 	if(x == 9){
