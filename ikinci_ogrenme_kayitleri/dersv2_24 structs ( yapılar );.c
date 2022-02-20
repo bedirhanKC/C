@@ -21,7 +21,7 @@ int main(){
 	strcpy(calisan1.ad,"bedirhan");
 	strcpy(calisan1.soyad,"komurcu");
 	calisan1.kimlikno=123456;
-	strcpy(calisan1.telno,"5453160598");												// Çalışan 1 için değerleri giriyoruz
+	strcpy(calisan1.telno,"5453160000");												// Ã‡alÄ±ÅŸan 1 iÃ§in deÄŸerleri giriyoruz
 	strcpy(calisan1.departman,"bilgisayar muhendisligi");
 	strcpy(calisan1.okul,"KBU");
 	calisan1.yas=20;
