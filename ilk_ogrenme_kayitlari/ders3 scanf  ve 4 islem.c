@@ -13,7 +13,7 @@ scanf fonksiyonu
 	
 	
 /* Ders 4
-4 iþlem */
+4 islem */
 
 	int toplam,cikarma,carpma;
 	float bolme;
