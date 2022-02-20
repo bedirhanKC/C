@@ -1,1 +1,1 @@
-### Udemy'de ilk öğrenmeye başladığım kurs aşamasında, öğrenirken yazdığım kodlar.
+### Udemy'de ilk öğrenmeye başladığım kurs aşamasında yazdığım kodlar.
