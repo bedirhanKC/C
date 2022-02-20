@@ -6,13 +6,13 @@ int main(){
 	printf("Bu uygulama dikdortgenin alani ve cevresini hesaplar.\n\nKisa kenari giriniz: ");
 	scanf("%d",&kisa);
 		if(kisa<=0){
-			printf("yanlis girdin,sg bidaha gir");
+			printf("yanlis girdin, bidaha gir");
 			return 0;
 		}
 	printf("Uzun kenari giriniz: ");
 	scanf("%d",&uzun);
 		if(kisa<=0){
-		printf("yanlis girdin,sg bidaha gir");
+		printf("yanlis girdin, bidaha gir");
 
 		return 0;
 		}
