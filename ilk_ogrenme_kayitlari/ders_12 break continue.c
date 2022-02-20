@@ -22,19 +22,11 @@ setlocale(LC_ALL,"Turkish");
 	
 	
 		if(a==5){
-			continue; // 5e geldiğinde döngüyü başa alır ve listede 5 olmaz ( 1-2-3-4-6-7-8...)
+			continue; // 5e geldiÃ°inde dÃ¶ngÃ¼yÃ¼ baÃ¾a alÃ½r ve listede 5 olmaz ( 1-2-3-4-6-7-8...)
 		}
 	printf("%d",a);
 	printf("\n");		
 	}
-
-
-
-
-
-
-
-
 
 return 0;	
 }
