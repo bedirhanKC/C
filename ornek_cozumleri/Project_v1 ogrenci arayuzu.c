@@ -220,11 +220,6 @@ gg:							printf("\nGeçen ve Kalan öğrenci sayını öğrenmek için1'i\nGeç
 			break;
 	}
 	
-		
-
-
-
-		
 	
 	
 return 0;
