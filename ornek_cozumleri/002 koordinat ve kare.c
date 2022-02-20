@@ -6,15 +6,15 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 
 int ax,ay,bx,by,cx,cy,dx,dy,a;
-menu: printf("ilk noktanın kordinatlarını giriniz:\n");
+menu: printf("ilk noktanÄ±n kordinatlarÄ±nÄ± giriniz:\n");
 scanf("%d %d",&ax,&ay);
-printf("ilk noktanın kordinatları:(%d,%d)\n\nikinci noktanın kordinatlarını giriniz:\n",ax,ay);
+printf("ilk noktanÄ±n kordinatlarÄ±:(%d,%d)\n\nikinci noktanÄ±n kordinatlarÄ±nÄ± giriniz:\n",ax,ay);
 scanf("%d %d",&bx,&by);
-printf("ikinci noktanın kordinatları:(%d,%d)\n\nüçüncü noktanın kordinatlarını giriniz:\n",bx,by);
+printf("ikinci noktanÄ±n kordinatlarÄ±:(%d,%d)\n\nÃ¼Ã§Ã¼ncÃ¼ noktanÄ±n kordinatlarÄ±nÄ± giriniz:\n",bx,by);
 scanf("%d %d",&cx,&cy);
-printf("üçüncü noktanın kordinatları:(%d,%d)\n\ndördüncü noktanın kordinatlarını giriniz:\n",cx,cy);
+printf("Ã¼Ã§Ã¼ncÃ¼ noktanÄ±n kordinatlarÄ±:(%d,%d)\n\ndÃ¶rdÃ¼ncÃ¼ noktanÄ±n kordinatlarÄ±nÄ± giriniz:\n",cx,cy);
 scanf("%d %d",&dx,&dy);
-printf("dördüncü noktanın kordinatları:(%d,%d)\n\n",dx,dy);
+printf("dÃ¶rdÃ¼ncÃ¼ noktanÄ±n kordinatlarÄ±:(%d,%d)\n\n",dx,dy);
 float A,B,C,D;
 A=(sqrt((ax-bx)*(ax-bx)+(ay-by)*(ay-by)));
 B=(sqrt((bx-cx)*(bx-cx)+(by-cy)*(by-cy)));
@@ -34,16 +34,17 @@ printf("\n\n");
 if(A==B && B==C && C==D){
 
 	if(sqrt((A*A)+(B*B))==sqrt((C*C)+(D*D))){
-		printf("Şekil karedir");	
-	}else{printf("şekil eşkenar dörtgendir");
+		printf("Åekil karedir");	
+	}else{
+		printf("ÅŸekil eÅŸkenar dÃ¶rtgendir");
 	}	
 }else{
-	printf("şekil kare değildir.");
+	printf("ÅŸekil kare deÄŸildir.");
 }
 
 
 			printf("\n");
-			printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+			printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 			scanf("%d",&a);
 			printf("\n");		
 			if(a == 9){
