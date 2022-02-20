@@ -112,7 +112,7 @@ menu:menu();
 		goto menu;break;
 		
 		default:
-			printf("Yanlis giris yaptin, sg.");
+			printf("Yanlis giris yaptin.");
 			return 0;	
 	}
 	
