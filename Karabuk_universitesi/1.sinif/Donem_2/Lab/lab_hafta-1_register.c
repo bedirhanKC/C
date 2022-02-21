@@ -10,7 +10,7 @@ Lab dersi
 int main(){
 
 	clock_t start_t, end_t;
-	register int id1, id2; //register'in önemini anlamak icin, normal int degiskeni ile denenmelidir.
+	register int id1, id2; //register'in önemini anlamak icin, normal int degiskeni ile de denenmelidir.
 	
 	start_t = clock();
 	
