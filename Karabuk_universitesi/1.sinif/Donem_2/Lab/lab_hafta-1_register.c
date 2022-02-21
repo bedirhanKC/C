@@ -1,6 +1,6 @@
 /*
-Bedirhan Kömürcü
-16 şubat 2022
+Bedirhan KÃ¶mÃ¼rcÃ¼
+16 Ã¾ubat 2022
 Lab dersi
 */
 
@@ -10,7 +10,7 @@ Lab dersi
 int main(){
 
 	clock_t start_t, end_t;
-	register int id1, id2; //register'in önemini anlamak icin, normal int degiskeni ile denenmelidir.
+	register int id1, id2; //register'in Ã¶nemini anlamak icin, normal int degiskeni ile denenmelidir.
 	
 	start_t = clock();
 	
