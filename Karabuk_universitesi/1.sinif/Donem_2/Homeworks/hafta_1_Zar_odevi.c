@@ -1,7 +1,7 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 2010206036
-16 şubat 2022
+16 ÅŸubat 2022
 00.37
 */
 
