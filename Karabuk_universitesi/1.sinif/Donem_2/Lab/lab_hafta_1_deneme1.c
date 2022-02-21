@@ -1,14 +1,20 @@
+/*
+Bedirhan KÃ¶mÃ¼rcÃ¼
+16 ÅŸubat 2022
+Lab dersi
+*/
+
 #include<stdio.h>
 
 void fonk(void);
 
-int gid = 287; //global int değişken tanımlaması
+int gid = 287; //global int deÃ°iÃ¾ken tanÃ½mlamasÃ½
 
 int main(void){
 	
 	printf("deneme1.c gid degisken degeri: %d\n",gid);
 	
-	fonk(); // deneme2.c dosyasındaki fonk() fonksiyonuna çağrı
+	fonk(); // deneme2.c dosyasÃ½ndaki fonk() fonksiyonuna Ã§aÃ°rÃ½
 	
 	return 0;
 }
