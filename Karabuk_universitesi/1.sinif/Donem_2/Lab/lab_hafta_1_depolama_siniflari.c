@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+16 şubat 2022
+Lab dersi (ekstra kod)
+*/
+
 #include<stdio.h>
 
 int x;;
