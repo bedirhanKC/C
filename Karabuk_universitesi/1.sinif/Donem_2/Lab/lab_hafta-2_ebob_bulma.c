@@ -1,3 +1,11 @@
+/*
+Bedirhan Kömürcü
+23.02.2022
+Lab dersi
+hafta 2
+*/
+
+
 #include<stdio.h>
 #include<stdio.h>
 
