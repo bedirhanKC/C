@@ -21,7 +21,7 @@ int main(){
 	
 	printf("Dogal sayiyi giriniz:");
 	scanf("%d",&sayi);
-	printf("tersi : %d",fonk(sayi));
+	printf("toplam : %d",fonk(sayi));
 	
 	
 	
