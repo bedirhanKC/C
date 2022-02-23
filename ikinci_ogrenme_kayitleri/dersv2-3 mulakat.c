@@ -5,7 +5,7 @@ int main(){
 	char cinsiyet;
 	float boy;
 	
-	printf("Lutfen cinsiyetinizi giriniz[E/K]:");
+	printf("Lutfen cinsiyetinizi giriniz [E/K]:");
 	scanf("%c",&cinsiyet);
 	
 	printf("Lutfen boyunuzu cm cinsinden giriniz: ");
