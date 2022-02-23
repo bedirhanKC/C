@@ -1,3 +1,12 @@
+/*
+Bedirhan Kömürcü
+23.02.2022
+Lab dersi
+hafta 2
+*/
+
+// 1'den N'e kadar sayilari toplama
+
 #include<stdio.h>
 
 int fonk(int x){
