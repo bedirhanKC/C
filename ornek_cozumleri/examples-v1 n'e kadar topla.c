@@ -3,14 +3,14 @@
 int main(){
 setlocale(LC_ALL,"Turkish");
 int sayi,i,a,x=0;
-menu:	printf("Sonuç, girdiğiniz sayıya kadar olan pozitif tam sayılarının toplamını verecektir(girdiğiniz sayı dahildir).\nHesaplamak istediğiniz sayıyı giriniz: ");
+menu:	printf("SonuÃ§, girdiÄŸiniz sayÄ±ya kadar olan pozitif tam sayÄ±larÄ±nÄ±n toplamÄ±nÄ± verecektir(girdiÄŸiniz sayÄ± dahildir).\nHesaplamak istediÄŸiniz sayÄ±yÄ± giriniz: ");
 scanf("%d",&sayi);
 for(i=1;i<=sayi;i++){
 	a+=i;
 	printf("%d\n",i);	
 }
 printf("\ntoplam: %d\n",a);
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&x);
 		printf("\n");		
 		if(x == 9){
