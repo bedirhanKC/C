@@ -6,7 +6,7 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 
 int sayi,n,i;
-printf("Düzenlemek istediğiniz sayıyı giriniz: ");
+printf("DÃ¼zenlemek istediÄŸiniz sayÄ±yÄ± giriniz: ");
 scanf("%d",sayi);
 
 int dizi[10];
