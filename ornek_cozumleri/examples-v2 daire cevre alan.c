@@ -4,13 +4,13 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 int sayi,x;
 float a,c;
-menu: printf("Çevresini ve alanını öğrenmek istediğiniz dairenin yarıçapını giriniz(pi=3,14): ");
+menu: printf("Ã‡evresini ve alanÄ±nÄ± Ã¶ÄŸrenmek istediÄŸiniz dairenin yarÄ±Ã§apÄ±nÄ± giriniz(pi=3,14): ");
 scanf("%d",&sayi);
 a=3.14*(sayi*sayi);
 c=2*3.14*sayi;
-printf("Alan: %.2f\nÇevre: %.2f\n",a,c);
+printf("Alan: %.2f\nÃ‡evre: %.2f\n",a,c);
 
-		printf("\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&x);
 		printf("\n");		
 		if(x == 9){
