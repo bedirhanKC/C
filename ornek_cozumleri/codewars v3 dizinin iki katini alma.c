@@ -11,17 +11,17 @@ setlocale(LC_ALL,"Turkish");
 
 int n,x,a,i;
 
-printf("dizinin kaç elamanlı olacağını belirleyiniz: ");
+printf("dizinin kaÃ§ elamanlÄ± olacaÄŸÄ±nÄ± belirleyiniz: ");
 scanf("%d",&n);
 
 int dizi[n];
 
 for(i=0;i<n;i++){
-	printf("%d. elemanı giriniz: ",i);
+	printf("%d. elemanÄ± giriniz: ",i);
 	scanf("%d",&dizi[i]);
 }
 
-printf("\nGirmiş olduğunuz dizideki verilerin 2 katıyla oluşturulmuş yeni dizi:\n\n");
+printf("\nGirmiÅŸ olduÄŸunuz dizideki verilerin 2 katÄ±yla oluÅŸturulmuÅŸ yeni dizi:\n\n");
 for(i=0;i<n;i++){
 	if(i==0){
 		printf("dizi[%d]:{%d",n,dizi[i]*2);
