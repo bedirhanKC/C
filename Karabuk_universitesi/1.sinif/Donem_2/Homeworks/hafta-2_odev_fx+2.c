@@ -11,17 +11,16 @@ int fonk(int x){
 	if(x <= 0) return 0;
 	
 	else return fonk(x-1)+2;
-	
 }
 
 int main(){
 	
-	int sayi;
+	int a;
 	
 	printf("Bir sayi giriniz: ");
-	scanf("%d",&sayi);
+	scanf("%d",&a);
 	
-	printf("toplam=%d",fonk(sayi));
+	printf("toplam=%d",fonk(a);
 	
 	return 0;
 }
