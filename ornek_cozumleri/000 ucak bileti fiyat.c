@@ -5,27 +5,27 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 	
 	int z,s,y,u,a;
-menu:	printf("1-Sabah\n2-Öğleden sonra\n3-Gece\nBir zaman dilimi seçiniz[1-3]: ");
+menu:	printf("1-Sabah\n2-Ã–ÄŸleden sonra\n3-Gece\nBir zaman dilimi seÃ§iniz[1-3]: ");
 		scanf("%d",&z);
 			if(z<1 || z>3){
-			printf("\nyanlış giriş yaptınız,tekrar zaman seçimine yönlendiriliyorsunuz\n");
+			printf("\nyanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z,tekrar zaman seÃ§imine yÃ¶nlendiriliyorsunuz\n");
 			goto menu;}
 			else{
 			
 			}
 			
-menu2:	printf("\n1-Business\n2-ekonomi\nSınıf seçiniz[1-2]: ");
+menu2:	printf("\n1-Business\n2-ekonomi\nSÄ±nÄ±f seÃ§iniz[1-2]: ");
 		scanf("%d",&s);
 			if(s<1 || s>2){
-			printf("\nyanlış giriş yaptınız,tekrar sınıf seçimine yönlendiriliyorsunuz\n");
+			printf("\nyanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z,tekrar sÃ½nÃ½f seÃ§imine yÃ¶nlendiriliyorsunuz\n");
 			goto menu2;}
 			else{}
 			
 			
-menu3:	printf("\nYolcu sayısını giriniz: ");
+menu3:	printf("\nYolcu sayÄ±sÄ±nÄ± giriniz: ");
 		scanf("%d",&y);
 			if(y<1){
-			printf("yanlış giriş yaptınız.\nLütfen doğru sayı girişi yapınız.\n");
+			printf("yanlÄ±ÅŸ giriÅŸ yaptÄ±nÄ±z.\nLÃ¼tfen doÄŸru sayÄ± giriÅŸi yapÄ±nÄ±z.\n");
 			goto menu3;}
 			else{}
 			
@@ -61,11 +61,11 @@ menu3:	printf("\nYolcu sayısını giriniz: ");
 		
 	if(y>2){
 		u=u*0.85;
-		printf("\nyolcu sayısı 2'den fazla olduğu için %15 indirim uygulanmıştır\n");
+		printf("\nyolcu sayÄ±sÄ± 2'den fazla olduÄŸu iÃ§in %15 indirim uygulanÄ±yor\n");
 	}
-	printf("ödemeniz gereken ücret: %d",u);
+	printf("Ã¶demeniz gereken Ã¼cret: %d",u);
 			
-	printf("\ntekrar menüye dönmek için 9'a basın, aksi bir tuş çıkışa yönlendirecektir: ");
+	printf("\ntekrar menÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, aksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir: ");
 		scanf("%d",&a);
 		printf("\n");		
 		if(a == 9){
