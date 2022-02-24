@@ -5,17 +5,17 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 
 int a,b,t,x;
-menu:printf("çarpmak istediğiniz ilk sayıyı giriniz: ");
+menu:printf("Ã§arpmak istediÄŸiniz ilk sayÄ±yÄ± giriniz: ");
 scanf("%d",&a);
-printf("Çarpmak istediğiniz ikinci sayıyı giriniz: ");
+printf("Ã‡arpmak istediÄŸiniz ikinci sayÄ±yÄ± giriniz: ");
 scanf("%d",&b);
 
 t=a*b;
 
 printf("\n");
-printf("Sonuç: %d",t);
+printf("SonuÃ§: %d",t);
 
-	printf("\n\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+	printf("\n\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 	scanf("%d",&x);
 	printf("\n");		
 	if(x == 9){
