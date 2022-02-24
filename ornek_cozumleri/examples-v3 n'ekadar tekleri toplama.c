@@ -4,9 +4,9 @@ int main(){
 setlocale(LC_ALL,"Turkish");
 
 int sayi,x,i,a=0;
-menu:printf("girdiğiniz sayıya kadar bütün tek sayılar toplanacaktır(girdiğiniz sayı dahil): ");
+menu:printf("girdiÄŸiniz sayÄ±ya kadar bÃ¼tÃ¼n tek sayÄ±lar toplanacaktÄ±r(girdiÄŸiniz sayÄ± dahil): ");
 scanf("%d",&sayi);
-printf("toplanan sayıları görmek istemiyorsanız 5'e basın,aksi bir tuş toplanan verileri gösterecektir:");
+printf("toplanan sayÄ±larÄ± gÃ¶rmek istemiyorsanÄ±z 5'e basÄ±n,aksi bir tuÅŸ toplanan verileri gÃ¶sterecektir:");
 int y;
 scanf("%d",&y);
 for(i=0;i<=sayi;i++){
@@ -19,7 +19,7 @@ for(i=0;i<=sayi;i++){
 
 printf("\ntoplam:%d",a);
 
-		printf("\n\nmenüye dönmek için 9'a basın, \naksi bir tuş çıkışa yönlendirecektir.\n");
+		printf("\n\nmenÃ¼ye dÃ¶nmek iÃ§in 9'a basÄ±n, \naksi bir tuÅŸ Ã§Ä±kÄ±ÅŸa yÃ¶nlendirecektir.\n");
 		scanf("%d",&x);
 		printf("\n");		
 		if(x == 9){
