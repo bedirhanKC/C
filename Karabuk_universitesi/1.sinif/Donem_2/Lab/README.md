@@ -7,4 +7,5 @@ hafta 1 isimli kodlar hafta 2'ye,
 hafta 2 isimli kodlar hafta 3'e,
 hafta 3 isimli kodlar hafta 4'e ait.
 
+
 hafta 5'den sonra bu durum düzeltildi.
