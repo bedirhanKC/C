@@ -1,5 +1,5 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 10.03.2022
 22.09
 */
@@ -17,7 +17,7 @@ int main(){
 	
 	printf(" Bir arraydeki tum elemanlari topla :\n------------------------------------------------\n");
 	
-	printf("eleman sayisini giriniz:");
+	printf("eleman sayisini giriniz(max deger 10 olmali):");
 	scanf("%d",pn);
 	
 	for(i=0 ; i<(*pn) ; i++){
