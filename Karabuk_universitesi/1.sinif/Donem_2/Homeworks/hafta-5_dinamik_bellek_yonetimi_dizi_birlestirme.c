@@ -1,5 +1,5 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 15.03.2022
 23.52
 */
