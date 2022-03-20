@@ -1,5 +1,5 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 18.03.2022
 21.30
 */
@@ -10,7 +10,7 @@ Bedirhan Kömürcü
 int BakiyeYeterliligi(int CekilecekTutar,int *pbakiye){
 	
 	if(CekilecekTutar>*pbakiye){	
-		printf("\nBakiyeniz Yetersiz.");
+		printf("\nBakiyeniz Yetersiz.\n\n");
 		return 0;
 	}
 	else return 1;
@@ -29,6 +29,8 @@ int BakiyeDogrulugu(int CekilecekTutar){
 
 void BanknotEsitleme(int *pbeslik,int *ponluk,int *pyirmilik,int *pellilik,int *pyuzluk){
 	
+	
+	
 	if(*pyuzluk<0){
 		
 		*pellilik=((*pellilik)-(2*((*pyuzluk)*(-1))));
@@ -36,8 +38,8 @@ void BanknotEsitleme(int *pbeslik,int *ponluk,int *pyirmilik,int *pellilik,int *
 		
 	}if(*pellilik<0){
 		
-		*pyirmilik=((*pyirmilik)-(2*((*pellilik)*(-1))));
-		*ponluk=((*ponluk)-(1*((*pyirmilik)*(-1))));
+		*pyirmilik=(*pyirmilik)-(2*((*pellilik)*(-1)));
+		*ponluk=((*ponluk)-(1*((*pellilik)*(-1))));
 		*pellilik=0;
 		
 	}if(*pyirmilik<0){
@@ -99,35 +101,35 @@ int ParaCekme(int CekilecekTutar,int *pbeslik,int *ponluk,int *pyirmilik,int *pe
 	*pbakiye=(*pbakiye)-CekilecekTutar;
 	
 	if(CekilecekTutar>=100){
-			
+		
 		*(pyuzluk)=(*pyuzluk)-CekilecekTutar/100;
 		CekilecekTutar=CekilecekTutar%100;
-
 		
-	}if(CekilecekTutar>=50){
+	}if(CekilecekTutar>=50 ){
 		
 		*(pellilik)=(*pellilik)-CekilecekTutar/50;
 		CekilecekTutar=CekilecekTutar%50;
 		
-	}if(CekilecekTutar>=20){
+	}if(CekilecekTutar>=20 ){
 		
 		*(pyirmilik)=(*pyirmilik)-CekilecekTutar/20;
 		CekilecekTutar=CekilecekTutar%20;
+
 		
-	}if(CekilecekTutar>=10){
-		
+	}if(CekilecekTutar>=10 ){
+			
 		*(ponluk)=(*ponluk)-CekilecekTutar/10;
 		CekilecekTutar=CekilecekTutar%10;
 		
-	}if(CekilecekTutar>=5){
-		
+	}if(CekilecekTutar>=5 ){
+				
 		*(pbeslik)=(*pbeslik)-CekilecekTutar/5;
 		CekilecekTutar=CekilecekTutar%5;
 		
 	}
 	
 	BanknotEsitleme(pbeslik,ponluk,pyirmilik,pellilik,pyuzluk);
-	KasaDurumuYazdirma(pbeslik,ponluk,pyirmilik,pellilik,pyuzluk,pbakiye);
+
 	
 }
 
@@ -146,7 +148,7 @@ int ParaYatirma(int YatirilacakTutar,int *pbeslik,int *ponluk,int *pyirmilik,int
 		YatirilacakTutar=YatirilacakTutar%100;
 
 		
-	}if(YatirilacakTutar>=50){
+	}if(YatirilacakTutar>=50 ){
 		
 		*(pellilik)=(*pellilik)+YatirilacakTutar/50;
 		YatirilacakTutar=YatirilacakTutar%50;
@@ -168,7 +170,7 @@ int ParaYatirma(int YatirilacakTutar,int *pbeslik,int *ponluk,int *pyirmilik,int
 		
 	}
 	
-	KasaDurumuYazdirma(pbeslik,ponluk,pyirmilik,pellilik,pyuzluk,pbakiye);
+
 }
 
 int main(){
@@ -188,7 +190,7 @@ int main(){
 	
 	printf("         MENU         \n");
 	printf("--------------------------\n");	
-	printf("1-Para Cekme \n2-Para Yatirma \n");
+	printf("1-Para Cekme \n2-Para Yatirma \n3-Kasayi Gosterme \n");
 	printf("Gerceklestirmek istediginiz islemi seciniz[ -1 girilince sistem kapanacaktir ] : ");
 	scanf("%d",&islem);
 	
@@ -210,14 +212,20 @@ int main(){
 				
 				ParaYatirma(YatirilacakTutar,pbeslik,ponluk,pyirmilik,pellilik,pyuzluk,pbakiye);
 				
-			}else
-				printf("\nYanlis giris yaptiniz...\n");
+			}else if(islem==3){
+				
+				KasaDurumuYazdirma(pbeslik,ponluk,pyirmilik,pellilik,pyuzluk,pbakiye);
+				
+			}
+			
+			else
+				printf("\nYanlis giris yaptiniz...\n\n");
 				
 				
 
 		printf("         MENU         \n");
 		printf("--------------------------\n");				
-		printf("1-Para Cekme \n2-Para Yatirma \n");
+		printf("1-Para Cekme \n2-Para Yatirma \n3-Kasayi Gosterme \n");
 		printf("Gerceklestirmek istediginiz islemi seciniz[ -1 girilince sistem kapanacaktir ] : ");
 		scanf("%d",&islem);
 	
