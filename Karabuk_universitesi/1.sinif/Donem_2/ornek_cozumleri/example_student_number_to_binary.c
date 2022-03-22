@@ -1,9 +1,3 @@
-/*
-Bedirhan Kömürcü
-22.03.2022
-23.10
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -19,7 +13,7 @@ int main(){
 	
 	while(1){
 		
-		if(ogrenciNumarasi<1) break;
+		if(ogrenciNumarasi==0) break;
 		
 		*(ptr+i)=ogrenciNumarasi%2;
 		ogrenciNumarasi=ogrenciNumarasi/2;
@@ -35,5 +29,7 @@ int main(){
 		
 		printf("%d",*(ptr+j-1));
 	}
+	
+	free(ptr);
 	
 }
