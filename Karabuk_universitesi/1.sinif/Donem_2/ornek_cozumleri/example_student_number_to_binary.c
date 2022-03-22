@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+22.03.2022
+23.10
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
