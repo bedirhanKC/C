@@ -1,5 +1,5 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 07.03.2022
 22.11
 */
@@ -16,9 +16,7 @@ int BasamakToplami(int x){
 
 int main(){
 	
-	int a=3/2;
-	
-	printf("%d",a);
+	printf("%d",BasamakToplami(123));
 	
 	return 0;
 }
