@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+10.4.2022
+01.27
+*/
+
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
@@ -98,27 +104,6 @@ int main(){
 		
 		
 	}
-	
-//aqvia
-//hazez
-//tugruz
-//ularma
-//awlon
-//wecamiu
-//viggr
-//otyda
-//kuzuvru
-//zafazet
-//mohiri
-//witefu
-//taijzu
-//sauht
-//oykah
-//hoseo
-//xagoo
-//nosuwu
-//ocriu
-//wenoan
 	
 	printf("%s",nick);
 
