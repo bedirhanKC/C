@@ -1,7 +1,7 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 12.04.2022
-23.10
+23.29
 */
 
 #include<stdio.h>
