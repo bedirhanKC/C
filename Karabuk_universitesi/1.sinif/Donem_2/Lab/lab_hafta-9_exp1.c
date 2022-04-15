@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+2010206036
+lab hafta 8
+*/
+
 #include<stdio.h>
 
 enum day{sunday=1,tuesday,wednesday,thursday,friday,saturday};
