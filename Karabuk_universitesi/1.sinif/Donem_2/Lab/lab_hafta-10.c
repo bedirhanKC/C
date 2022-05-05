@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+2010206036
+lab hafta 10
+*/
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
