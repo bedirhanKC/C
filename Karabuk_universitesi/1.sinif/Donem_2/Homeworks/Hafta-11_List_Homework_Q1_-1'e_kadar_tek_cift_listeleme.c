@@ -76,9 +76,6 @@ int main(){
 	
 	p->next=chead; // Bu satırda, tek sayılar listesinin sonuna cift sayilar listesi eklenmiş olur.
 	
-	
-	int i;
-	
 	p=thead;
 	
 	while(p!=NULL){ //Bu döngünün içerisinde de en son yazdırma işlemi gerçekleşir.
