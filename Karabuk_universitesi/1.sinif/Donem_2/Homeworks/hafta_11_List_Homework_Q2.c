@@ -1,13 +1,13 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 05.05.2022
 21.08
 List Homework - Q2
 */
 
 /*
-Bir bağlı doğrusal listelerde listenin sonundaki düğümü keserek listenin başına ekleyen ve
-oluşan listenin son halini geri döndüren prototipi aşağıda verilmiş fonksiyonu yazınız
+Bir baÄŸlÄ± doÄŸrusal listelerde listenin sonundaki dÃ¼ÄŸÃ¼mÃ¼ keserek listenin baÅŸÄ±na ekleyen ve
+oluÅŸan listenin son halini geri dÃ¶ndÃ¼ren prototipi aÅŸaÄŸÄ±da verilmiÅŸ fonksiyonu yazÄ±nÄ±z
 */
 
 #include<stdio.h>
@@ -34,15 +34,15 @@ node* cutlastaddhead(node* head){
 	
 	while(q->next!=NULL){
 		
-		q=q->next; //q son eleman olana kadar döngü devam ediyor.
-		p=p->next; //p son elemandan önceki eleman olana kadar döngü devam ediyor.
+		q=q->next; //q son eleman olana kadar dÃ¶ngÃ¼ devam ediyor.
+		p=p->next; //p son elemandan Ã¶nceki eleman olana kadar dÃ¶ngÃ¼ devam ediyor.
 		
 	}
 	
 	q->next=head->next; 
 	head->next=NULL;
 	p->next=head;
-	head=q;  // burdaki 4 işlemde ise listenin ilk ve son düğümleri yer değiştiriliyor.
+	head=q;  // burdaki 4 iÅŸlemde ise listenin ilk ve son dÃ¼ÄŸÃ¼mleri yer deÄŸiÅŸtiriliyor.
 	
 	return head;
 }
@@ -53,8 +53,8 @@ int main(){
 	int deger,SayiSayisi=0; 
 	node *head,*p;
 	
-	while(1){ //bu döngünün içinde, -1 girilene kadar listenin elemanlarını alıyorum
-			  // listeyi böyle almak istedim
+	while(1){ //bu dÃ¶ngÃ¼nÃ¼n iÃ§inde, -1 girilene kadar listenin elemanlarÄ±nÄ± alÄ±yorum
+			  // listeyi bÃ¶yle almak istedim
 		
 		printf("Bir deger giriniz:");
 		scanf("%d",&deger);
@@ -78,11 +78,11 @@ int main(){
 			
 	}
 	
-	head=cutlastaddhead(head); // burda fonksiyona headi gönderip değişikliği gerçekleştiriyorum.
+	head=cutlastaddhead(head); // burda fonksiyona headi gÃ¶nderip deÄŸiÅŸikliÄŸi gerÃ§ekleÅŸtiriyorum.
 	
 	p=head;
 	
-	while(p!=NULL){ //Bu döngünün içerisinde de en son yazdırma işlemi gerçekleşir.
+	while(p!=NULL){ //Bu dÃ¶ngÃ¼nÃ¼n iÃ§erisinde de en son yazdÄ±rma iÅŸlemi gerÃ§ekleÅŸir.
 		
 		printf("%d  ",p->number);
 		
