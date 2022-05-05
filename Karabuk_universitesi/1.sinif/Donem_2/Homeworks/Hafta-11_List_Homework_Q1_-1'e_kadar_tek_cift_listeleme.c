@@ -1,13 +1,13 @@
 /*
-Bedirhan Kömürcü
+Bedirhan KÃ¶mÃ¼rcÃ¼
 05.05.2022
 12.15
 List Homework - Q1
 */
 
 /*
-Klavyeden -1 girilene kadar verilen tek sayıları tek bağlı doğrusal bir listenin başına
-verilen çift sayıları ise listenin sonuna ekleyen programı yazınız.
+Klavyeden -1 girilene kadar verilen tek sayÄ±larÄ± tek baÄŸlÄ± doÄŸrusal bir listenin baÅŸÄ±na
+verilen Ã§ift sayÄ±larÄ± ise listenin sonuna ekleyen programÄ± yazÄ±nÄ±z.
 */
 
 #include<stdio.h>
@@ -36,7 +36,7 @@ int main(){
 		
 		if(deger == -1) break;
 		
-		if(deger%2!=0){ //Bu blokta tek sayıları başa ekleme işlemi gerçekleşir.
+		if(deger%2!=0){ //Bu blokta tek sayÄ±larÄ± baÅŸa ekleme iÅŸlemi gerÃ§ekleÅŸir.
 			
 			if(TekSayisi==0){
 			
@@ -53,7 +53,7 @@ int main(){
 			TekSayisi++;
 			p->next=NULL;
 						
-		}else{ //Bu blokta da cift sayıları yeni bir liste gibi olusturma islemi gerçekleşir.
+		}else{ //Bu blokta da cift sayÄ±larÄ± yeni bir liste gibi olusturma islemi gerÃ§ekleÅŸir.
 			
 			if(CiftSayisi==0){
 			
@@ -74,14 +74,14 @@ int main(){
 	
 	}
 	
-	p->next=chead; // Bu satırda, tek sayılar listesinin sonuna cift sayilar listesi eklenmiş olur.
+	p->next=chead; // Bu satÄ±rda, tek sayÄ±lar listesinin sonuna cift sayilar listesi eklenmiÅŸ olur.
 	
 	
 	int i;
 	
 	p=thead;
 	
-	while(p!=NULL){ //Bu döngünün içerisinde de en son yazdırma işlemi gerçekleşir.
+	while(p!=NULL){ //Bu dÃ¶ngÃ¼nÃ¼n iÃ§erisinde de en son yazdÄ±rma iÅŸlemi gerÃ§ekleÅŸir.
 		
 		printf("%d  ",p->sayi);
 		
