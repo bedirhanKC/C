@@ -1,3 +1,9 @@
+/*
+Bedirhan Kömürcü
+18.05.2022
+lab hafta 12
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
