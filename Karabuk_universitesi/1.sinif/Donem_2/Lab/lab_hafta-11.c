@@ -1,5 +1,7 @@
+
 /*
 Bedirhan Kömürcü
+2010206036
 Lab hafta 11
 */
 
