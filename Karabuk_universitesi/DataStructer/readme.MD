@@ -1,1 +1,0 @@
-### Data structer ders notlari ###
