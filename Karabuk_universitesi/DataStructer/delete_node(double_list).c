@@ -84,7 +84,7 @@ node* deleteNode(node *head, int silinecekDeger){
 		}
 		
 		if(bulunduMu == 0)
-			printf("\nöle biþe yok\n\n");
+			printf("\nÃ¶le biÃ¾e yok\n\n");
 		
 	}
 	
